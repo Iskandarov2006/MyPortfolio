@@ -1,0 +1,88 @@
+form input, textarea{
+    display: block;
+    width: 600px;
+    margin: 35px 0;
+    padding: 16px 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+form button{
+    width: 180px;
+    height: 40px;
+    border: 1px solid #716c6c;
+    color: #716c6c;
+    transition: all 0.5s;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 7px;
+    border-radius: 5px;
+}
+form button:hover{
+    background: #716c6c;
+    color: white;
+    transition: all 0.5s;
+}
+form div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 600px;
+}
+.ContactUs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ContactUs h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+form{
+    animation: contactForm 0.5s linear;
+}
+@keyframes contactForm {
+    0%{
+        margin-left: 50rem;
+        opacity: -1;
+    }
+    100%{
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+
+/* media=========================================================== */
+@media (max-width: 630px) {
+    input{
+        width: 400px !important;
+    }
+    textarea{
+        width: 400px;
+    }
+    form div{
+        width: 400px;
+    }
+}
+@media (max-width: 500px) {
+    input{
+        width: 400px !important;
+    }
+    textarea{
+        width: 400px;
+    }
+    form div{
+        width: 400px;
+    }
+    .ContactUs{
+        margin-left: 15rem;
+    }
+}

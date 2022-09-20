@@ -1,0 +1,312 @@
+.Headers {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 0 25px;
+    flex-wrap: wrap;
+}
+
+.Headers .HeaderRight img {
+    width: 250px;
+    border-radius: 100%;
+}
+
+.Headers .HeaderLeft h4 {
+    font-size: 3rem;
+    font-family: sans-serif;
+    color: #faff08;
+}
+
+.Headers .HeaderLeft p {
+    width: 500px;
+    font-family: sans-serif;
+    margin-top: 2rem;
+    color: #b6adad;
+    font-size: 1.5rem;
+}
+
+.Headers .HeaderButtons a button {
+    border: 1px solid #b6adad;
+    width: 170px;
+    height: 50px;
+    margin-top: 4rem;
+    margin-right: 2rem !important;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: #b6adad;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.PortfolioButton {
+    width: 170px;
+    height: 50px;
+    color: #faff08 !important;
+    border: 1px solid #faff08 !important;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: all 0.5s linear;
+}
+
+.PortfolioButton:hover {
+    background: #faff08 !important;
+    color: black !important;
+    border-radius: 0px !important;
+    border: none !important;
+    transition: all 0.5s linear;
+}
+
+.Headers .HeaderButtons a button:hover {
+    border: none;
+    background: #b6adad;
+    color: white;
+    border-radius: 0px;
+    transition: all 0.5s linear;
+}
+
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 150px;
+}
+
+.icons i:hover {
+    color: white;
+    text-shadow: 0 0 10px white;
+    transition: all 0.2s;
+}
+
+.icons i {
+    color: #b6adad;
+    transition: all 1s;
+    font-size: 1.5rem;
+}
+
+.icons .fas {
+    animation: 0.1s iconPhone infinite;
+}
+
+@keyframes iconPhone {
+    0% {
+        transform: rotateZ(5deg);
+    }
+
+    50% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(5deg);
+    }
+}
+
+
+
+/* =========================MEDIA RESPONSIVE========================================== */
+
+@media (max-width: 530px) {
+    .HeaderLeft {
+        margin-left: 7rem;
+        transition: all 0.5s;
+    }
+
+    .HeaderRight {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 384px) {
+    .HeaderLeft {
+        margin-left: 15rem;
+        transition: all 0.5s;
+    }
+
+    .HeaderRight {
+        margin-left: 10rem;
+        transition: all 0.5s;
+    }
+}
+
+@media (max-width: 300px) {
+    .HeaderLeft {
+        margin-left: 15rem;
+        transition: all 0.5s;
+    }
+
+    .HeaderLeft p {
+        transition: all 0.5s;
+        font-size: 2.2rem !important;
+        width: 400px !important;
+    }
+
+    .HeaderButtons {
+        display: flex;
+    }
+}
+
+@media (max-width: 200px) {
+    .HeaderLeft p {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media (max-width: 720px) {
+    .RightAbout p{
+        width: 400px !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .RightAbout p{
+        width: 340px !important;
+        font-size: 1.2rem !important;
+    }
+    .RightAbout{
+        margin-left: 5rem !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .LeftAboutAndRightAbo{
+        margin-left: 9rem !important;
+    }
+    .MySkills{
+        margin-left: 9rem !important;
+    }
+}
+
+/* ================HEADER ANIMATION========================================= */
+
+.HeaderRight{
+    animation: HeaderRight 0.5s;
+}
+@keyframes HeaderRight {
+    0%{
+        margin-left: 25rem;
+        transition: all 0.5s;
+    }
+    100%{
+        transition: all 0.5s;
+    }
+}
+
+/* =========================================== */
+
+#about .LeftAboutAndRightAbo .LeftAbout img{
+    width: 300px;
+    height: auto;
+    border-radius: 7px;
+}
+.LeftAboutAndRightAbo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    flex-wrap: wrap;
+    padding: 0 25px;
+}
+.RightAbout p{
+    width: 700px;
+    font-family: sans-serif;
+    margin: 5rem 0;
+    color: #b6adad;
+}
+.RightAbout h3{
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+.RightAbout p a{
+    color: #FFFF;
+}
+#about{
+    margin-top: 5rem;
+}
+
+h1{
+    color: #b6adad;
+}
+
+.SkillsMySikll h1{
+    color: white;
+    position: relative;
+    top: 5rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.Skill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Skill{
+    margin-top: 12rem;
+}
+.MySkills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+.skillls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1f1f1f;
+    width: 270px;
+    height: 400px;
+    transition: all 0.7s;
+    margin: 25px;
+    border-radius: 10px;
+}
+.skillls:hover{
+    background: white;
+    box-shadow: 1px 15px 15px white;
+    transition: all 0.7s;
+}
+.skillls:hover h1{
+    color: black !important;
+}
+.skillls i{
+    display: block;
+    font-size: 6rem;
+    background: rgba(0, 0, 0, 0.0);
+    text-align: center;
+}
+.skillls div{
+    background-color: rgba(0, 0, 0, 0.0);
+}
+.skillls h1{
+    display: block;
+    font-size: 3rem;
+    font-family: sans-serif;
+    background: rgba(0, 0, 0, 0.0);
+}
+.html{
+    color: red;
+}
+.css{
+    color: blue;
+}
+.js{
+    color: #faff08;
+}
+.bootstrap{
+    color: indigo;
+}
+.reactjs{
+    color: #105cc1;
+}
+
+
+
+/* ContactUs=========================================================================================== */

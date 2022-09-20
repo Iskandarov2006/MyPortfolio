@@ -1,0 +1,166 @@
+.skills {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 70px);
+  margin: 20px;
+}
+
+.sklLine {
+  position: relative;
+  bottom: 8px;
+  visibility: hidden;
+  padding-left: 6px;
+  color: greenyellow;
+}
+
+.ProgWidth {
+  padding: 0px 20px;
+}
+
+.skillDiv {
+  height: 5px;
+  width: 100%;
+  background-color: gray;
+}
+
+.skillBar {
+  display: block;
+  height: 5px;
+  background-color: rgb(26, 204, 19);
+  box-shadow:  0 0 15px yellow;
+}
+
+.p {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(177, 170, 170) !important;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.htmlBar {
+  width: 70%;
+  animation: html 3s 1s forwards;
+}
+
+.cssBar {
+  width: 85%;
+  animation: css 3s 1s forwards;
+}
+
+.jsBar {
+  width: 75%;
+  animation: js 3s 1s forwards;
+}
+
+.javaBar {
+  width: 75%;
+  animation: java 3s 1s forwards;
+}
+
+.ccpBar {
+  width: 60%;
+  animation: ccp 3s 1s forwards;
+}
+
+.reactBar {
+  width: 10%;
+  animation: react 3s 1s forwards;
+}
+
+.nodeBar {
+  width: 55%;
+  animation: node 3s 1s forwards;
+}
+
+.sqlBar {
+  width: 75%;
+  animation: sql 3s 1s forwards;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes ccp {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes node {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 55%;
+  }
+}
+
+@keyframes sql {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+
+.Skills{
+  margin-top: 5rem;
+}

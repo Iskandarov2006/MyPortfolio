@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+.NavIndex {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    width: 97.5%;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.NavIndex .NavUlIndex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 600px;
+}
+
+.NavIndex .NavUlIndex li .link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    /* font-family: 'Dancing Script', cursive; */
+    font-weight: 800 !important;
+    transition: all .7s;
+    color: #faff08;
+}
+
+.NavIndex .NavUlIndex li .link:hover {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    font-weight: 800 !important;
+    text-shadow: 0 0 15px white;
+    color: white;
+    transition: all .2s;
+}
+
+
+.NavIndex .NavUlIndex li {
+    list-style: none;
+}
+
+.NavIndex .NavUlIndex .ContactUS {
+    padding: 7px 15px;
+    margin: 0;
+    transition: all 0.8s;
+    border-radius: 8px;
+}
+
+.NavIndex .NavUlIndex .ContactUS:hover {
+    transition: all 0.2s;
+    opacity: 1;
+    padding: 7px 15px;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.NavIndex .logo{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #faff08;
+    letter-spacing: 7px;
+    border-radius: 5px;
+    cursor: no-drop;
+    background: rgb(34, 32, 32);
+    border: 2px solid #faff08;
+    animation: devcoderText 1s infinite;
+}
+
+@keyframes devcoderText {
+    0% {
+        border: 3px solid #faff08;
+        box-shadow: 0 0 5px #faff08 inset;
+    }
+
+    50% {
+        border: 3px solid rgba(0, 0, 0, 0.0);
+    }
+
+    100% {
+        border: 3px solid #faff08;
+        box-shadow: 0 0 5px #faff08 inset;
+
+    }
+}
+
+
+
+.btnClose {
+    display: none !important;
+}
+
+.BtnClick {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .BtnClick {
+        display: block !important;
+        margin-left: 80%;
+        position: fixed;
+    }
+
+    .NavbarScrollTop5 .navMedia{
+        background: rgb(34, 32, 32);
+    }
+
+    #ShowNav {
+        width: 60px;
+        height: 60px;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        background: #000;
+    }
+    .NavbarScrollTop5 #ShowNav {
+        width: 60px;
+        height: 60px;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        background-color: rgb(34, 32, 32);
+    }
+    .showNavIndexUl .link{
+        background: #000;
+        display: block;
+    }
+    .NavbarScrollTop5 .NavUlIndex .link{
+        background: rgb(34, 32, 32);
+    }
+    .NavbarScrollTop5 #ShowNav i{
+        background: rgb(34, 32, 32);
+    }
+    .navMedia {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .NavUlIndex {
+        position: relative;
+        top: -10rem;
+    }
+
+    .showNavIndexUl {
+        position: fixed;
+        top: 4rem;
+        text-align: center;
+        margin-left: -1rem;
+        padding: 10px 25px;
+        /* max-width: 1000px; */
+        width: 100% !important;
+        display: block !important;
+        animation: NavUlMedia 0.2s;
+    }
+}
+
+@keyframes NavUlMedia {
+    0%{
+        margin-left: 10rem;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+.showNavIndexUl li {
+    background: rgb(34, 32, 32);
+}
+.NavbarScrollTop5 {
+    box-shadow: 0 0 10px black;
+    position: fixed;
+    animation: NavScrollTop 0.5s;
+    z-index: 999;
+}
+
+@keyframes NavScrollTop {
+    0% {
+        margin-top: -10rem;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+.NavbarScrollTop5 .link {
+    color: #faff08;
+    z-index: 999;
+}
+.NavbarScrollTop5{
+    background-color: rgb(34, 32, 32);
+    position: fixed;
+    top: 0px;
+}
+.NavbarScrollTop5 .NavUlIndex{
+    background-color: rgb(34, 32, 32);
+}
+.NavbarScrollTop5 .NavUlIndex .ContactUS{
+    background-color: rgb(34, 32, 32);
+}
+.logo h1{
+    background-color: rgb(34, 32, 32); 
+    border-radius: 15px;
+}
+.NavbarScrollTop5 .link{
+    background: rgb(34, 32, 32);
+}
